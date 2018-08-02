@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Animations Using CSS</title>
+<style>
+	@font-face {
+		font-family: "super_smash_4_1_by_pokemon_diamond-d7zxu6d";
+		src: url(super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf);
+	}
+body{
+	margin:0;
+	padding:0;
+	background-color: #FFFFFF;
+	font-family: 'super_smash_4_1_by_pokemon_diamond-d7zxu6d';
+	}
+wrapper{
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: block;
+	}
+header{
+	height:150px;
+	background-color: #AD3234;
+	}
+h1 {
+	color:#fff;
+	padding:1em;
+	margin:0;
+	}
+ul {
+	margin: 0;
+	padding: 0;
+	}
+
+main{
+	background-color: #F4E7E7;
+	padding: 4em 0;
+	height: 24%;
+	}
+footer{
+	height:80px;
+	background-color:#3F2B2B;
+	position: absolute;
+	bottom: 0px;
+	}
+	#smashicons {
+		margin: 0 auto;
+		display: block;
+		width: 50%;
+	}
+
+body wrapper aside {
+	background-image: url(Smash_Ball.png);
+	background-repeat: no-repeat;
+	background-position: center 850px;
+	margin: 0 auto;
+	display: block;
+	width: 40%;
+	height: 600px;
+	transition: all 3s ease-in-out;
+}
+aside:hover {
+	background-position: center;
+}
+
+wrapper aside img {
+	position: absolute;
+}
+	.hidden {visibility: hidden;}
+	.unhidden {visibility: visible;}
+	</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+        <h1>Smash Dojo!</h1>
+        <nav>
+        
+        </nav>
+        </header>
+                
+        <main c>
+			<div id="smashicons"><a href="#" onClick="MM_showHideLayers('kirbu','','show','link','','hide','mario','','hide','samus','','hide')"><img src="kirbyicon.png"></a><a href="#" onClick="MM_showHideLayers('kirbu','','hide','link','','show','mario','','hide','samus','','hide')"><img src="linkicon.png"></a><a href="#" onClick="MM_showHideLayers('kirbu','','hide','link','','hide','mario','','show','samus','','hide')"><img src="marioicon.png"></a><a href="#" onClick="MM_showHideLayers('kirbu','','hide','link','','hide','mario','','hide','samus','','show')"><img src="samusicon.png"></a></div>
+        </main>
+      <aside>
+        <div id="kirbu" class="hidden"><img src="kirbyfull.png"></div>
+        <div class="hidden" id="link"><img src="linkfull.png"></div>
+        <div class="hidden" id="mario"> <img src="mariofull.png"></div>
+        <div class="hidden" id="samus"> <img src="samusfull.png"></div>
+        </aside>
+<footer>
+</footer>
+    </wrapper>
+</body>
+</html>
